@@ -1,0 +1,9 @@
+services:
+  whisper:
+    image: whisper-with-models
+    container_name: whisper
+    volumes:
+      - ./media:/media
+      - ./out:/out
+    entrypoint: [ "whisper" ]
+    command: [ "/media/test_video.mp4", "--language", "Russian", "--model", "medium", "--output_dir", "/out" ]
