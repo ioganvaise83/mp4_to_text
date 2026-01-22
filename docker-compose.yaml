@@ -6,4 +6,4 @@ services:
       - ./media:/media
       - ./out:/out
     entrypoint: [ "whisper" ]
-    command: [ "/media/test_video.mp4", "--language", "Russian", "--model", "medium", "--output_dir", "/out" ]
+    command: [ "/media/monitor_answers.mp4", "--language", "Russian", "--model", "medium", "--output_dir", "/out" ]
